@@ -1,84 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="white"/>
-<title>Heraizen IPL Statistics</title>
- <link rel="icon" href="favicon.ico" type="image/x-icon" />  
-<link rel="apple-touch-icon" href="images/hello-icon-152.png">   
-<meta name="theme-color" content="white"/>  
-<meta name="apple-mobile-web-app-capable" content="yes">  
-<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-<meta name="apple-mobile-web-app-title" content="Heraizen-IPL"> 
-<meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
-<meta name="msapplication-TileColor" content="#FFFFFF">
-<link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white" />
+    <title>Heraizen IPL Statistics</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Heraizen-IPL">
+    <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-dark navbar-expand-md mb-3">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">PWA - Heraizen</a>
-        <button type="button" name="nav-buttom" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon">.</span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
-                <a href="#" class="nav-item nav-link">Welcome: <i class="fa fa-user ml-2"></i></a>
+    <nav class="navbar navbar-dark navbar-expand-md mb-3">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">PWA - Heraizen</a>
+            <button type="button" name="nav-buttom" class="navbar-toggler" data-toggle="collapse"
+                data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon">.</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link" id="userName">Welcome:<i class="fa fa-user ml-2"></i></a>
+                    <a href="#" class="nav-item nav-link" id="logout"><i class="fa fa-power-off" ></i></a>
+                </div>
             </div>
         </div>
-    </div>    
-</nav>
-<div class="container">
-    <div class="py-1 text-center heading-data mb-3">
-       <h1 class="dipslay-4">IPL 2020 Statistics</h1>
-       <p class="lead">
-        BCCI, IPL FRANCHISES’ MEET HELD WITH THE FOCUS ON PUBLIC SAFETY AND WELL-BEING
+    </nav>
+    <div class="container">
+        <div class="py-1 text-center heading-data mb-3">
+            <h1 class="dipslay-4">IPL 2020 Statistics</h1>
+            <p class="lead">
+                BCCI, IPL FRANCHISES’ MEET HELD WITH THE FOCUS ON PUBLIC SAFETY AND WELL-BEING
 
-       </p>
+            </p>
+        </div>
+        <div class="row mb-3">
+
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <div id="idLabels">
+
+                </div>
+                <div id="tableData" class="mt-2">
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <article>
+                    <img src="images/2.jfif" alt="image-2" class="img-fluid img-thumbnail">
+
+                </article>
+            </div>
+
+        </div>
+
+        <footer class="footer fixed-bottom footer-nav">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2020 Heraizen</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="#" class="text-white">Terms of Use</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="#" class="text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="row mb-3">
- 
-        <div class="col-md-6 col-lg-6 col-xl-6">
-            <div id="idLabels">
-
-            </div>
-            <div id="tableData" class="mt-2">
-    
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-6">
-             <article>
-            <img src="images/2.jfif" alt="image-2" class="img-fluid img-thumbnail">
-          
-          </article>
-        </div>
-
-    </div>
-    
-    <footer class="footer fixed-bottom footer-nav">
-        <div class="row">
-            <div class="col-md-6">
-                <p>Copyright &copy; 2020 Heraizen</p>
-            </div>
-            <div class="col-md-6 text-md-right">
-                <a href="#" class="text-white">Terms of Use</a> 
-                <span class="text-muted mx-2">|</span> 
-                <a href="#" class="text-white">Privacy Policy</a>
-            </div>
-        </div>
-    </footer>
-</div>
-  <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <script src="js/ipl.js"><script>
+    <script src="js/ipl.js"></script>
 </body>
-</html>                            
+
+</html>
