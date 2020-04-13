@@ -1,0 +1,23 @@
+{
+  "name": "ipl-pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=8090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learnwithlakshman/iplpwa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/learnwithlakshman/iplpwa/issues"
+  },
+  "homepage": "https://github.com/learnwithlakshman/iplpwa#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

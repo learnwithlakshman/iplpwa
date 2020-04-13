@@ -1,4 +1,4 @@
-var cacheName = 'hello-pwa';
+var cacheName = 'Heraizen-pwa';
 var filesToCache = [
   './',
   './index.html',
