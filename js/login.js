@@ -26,7 +26,7 @@ function authenticate(data) {
             let token = data.token;
             if (token) {
                 storeToken(token);
-                window.location.replace("/landingpage.html");
+                window.location.replace("landingpage.html");
             } else {
                 document.querySelector("#msg").innerHTML = '<h4 class="text-danger">Invalid Login </h4>';
             }
