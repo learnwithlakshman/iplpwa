@@ -3,8 +3,6 @@ let labels = [];
 function getUserNameFromToken() {
     const base64Token = getToken().split(".")[1];
     let userName = JSON.parse(window.atob(base64Token)).sub;
-    console.log(userName);
-
     return userName;
 }
 function checkValidToken() {
@@ -90,7 +88,7 @@ const labelInfo = () => {
 
 logout.addEventListener('click', (event) => {
     localStorage.removeItem('userToken');
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 })
 
 function loadDashboard() {
@@ -100,7 +98,7 @@ function loadDashboard() {
         const logout = document.querySelector("#logout");
     } else {
         alert("Please login again");
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     }
 }
 
